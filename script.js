@@ -200,7 +200,9 @@ function initApp() {
   const modalCancelBtn = document.getElementById("modal-cancel-btn");
   const modalSaveBtn = document.getElementById("modal-save-btn");
   const modalClearBtn = document.getElementById("modal-clear-btn");
-  const apiKeyInput = document.getElementById("api-key-input");
+  const apiKeyInput = document.getElementById(
+    "a01bda5e0e090944aeb8cdb1486d87b6",
+  );
 
   apiKeyBtn.addEventListener("click", () => {
     // Pre-fill input value
