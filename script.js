@@ -227,7 +227,10 @@ function initApp() {
   modalSaveBtn.addEventListener("click", () => {
     const key = apiKeyInput.value.trim();
     if (key) {
-      localStorage.setItem("openweather_api_key", key);
+      localStorage.setItem(
+        "openweather_api_key",
+        "a01bda5e0e090944aeb8cdb1486d87b6",
+      );
       showToast("API Key saved successfully! Fetching live data...");
     } else {
       localStorage.removeItem("openweather_api_key");
