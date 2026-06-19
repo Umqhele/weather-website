@@ -204,7 +204,9 @@ function initApp() {
 
   apiKeyBtn.addEventListener("click", () => {
     // Pre-fill input value
-    const activeKey = localStorage.getItem("openweather_api_key") || "";
+    const activeKey =
+      localStorage.getItem("openweather_api_key") ||
+      "a01bda5e0e090944aeb8cdb1486d87b6"; // Default demo key
     apiKeyInput.value = activeKey;
     settingsModal.classList.remove("hidden");
   });
@@ -239,7 +241,7 @@ function initApp() {
 
   modalClearBtn.addEventListener("click", () => {
     localStorage.removeItem("openweather_api_key");
-    apiKeyInput.value = "";
+    apiKeyInput.value = "a01bda5e0e090944aeb8cdb1486d87b6";
     updateBadge();
     settingsModal.classList.add("hidden");
     showToast("Custom API key cleared. Reverted to high-fidelity demo mode.");
