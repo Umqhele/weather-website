@@ -455,7 +455,7 @@ function extractPayloadData(current, forecast) {
     const dayKeys = Object.keys(sortedDays).slice(0, 5);
 
     dayKeys.forEach((dateKey) => {
-      // Find representative reading (midday point is excellent)
+      //
       const readings = sortedDays[dateKey];
       const middleReading =
         readings[Math.floor(readings.length / 2)] || readings[0];
